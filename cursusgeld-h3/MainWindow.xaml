@@ -1,0 +1,23 @@
+﻿<Window x:Class="cursusgeld_h3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cursusgeld_h3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Jaar:" HorizontalAlignment="Left" Margin="116,56,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Aantal Lesuren:" HorizontalAlignment="Left" Margin="40,124,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Inschrijvingsgeld:" HorizontalAlignment="Left" Margin="26,0,0,0" VerticalAlignment="Center" FontSize="16" RenderTransformOrigin="0.579,0.051"/>
+        <TextBox x:Name="yearTextBox" HorizontalAlignment="Left" Margin="180,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <TextBox x:Name="lessonHoursTextBox" HorizontalAlignment="Left" Margin="180,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <TextBox x:Name="registrationMoneyTextBox" HorizontalAlignment="Left" Margin="180,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontSize="16" IsEnabled="False"/>
+        <Label x:Name="isValidNumberLabel" Content="" HorizontalAlignment="Center" Margin="0,56,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="isLeapYearLabel" Content="" HorizontalAlignment="Center" Margin="0,124,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button x:Name="testNumberButton" Content="Test Numeriek" HorizontalAlignment="Left" Margin="53,293,0,0" VerticalAlignment="Top" FontSize="16" Height="70" Width="148" FontWeight="Bold" Click="testNumberButton_Click"/>
+        <Button x:Name="calculateButton" Content="Berekenen" HorizontalAlignment="Left" Margin="274,293,0,0" VerticalAlignment="Top" FontSize="16" Height="70" Width="148" FontWeight="Bold" Click="calculateButton_Click"/>
+        <Button x:Name="closeButton" Content="Afsluiten" HorizontalAlignment="Left" Margin="507,293,0,0" VerticalAlignment="Top" FontSize="16" Height="70" Width="148" FontWeight="Bold" Click="closeButton_Click"/>
+
+    </Grid>
+</Window>
